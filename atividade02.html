@@ -13,6 +13,16 @@
         /***************************************************
          * Suas folhas de estilo devem ser inseridas aqui. *
          ***************************************************/
+
+        /* 11. Torna um bloco visível. */
+        .item {
+            display: none;
+        }
+
+        /* 12. Torna um bloco oculto. */
+        .show {
+            display: block;
+        }
     </style>
 </head>
 
@@ -30,9 +40,16 @@
             <ol>
                 <li>
                     <p>Crie o JavaScript necessário para selecionar cada elemento identificado por um ID;</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp" target="_blank">getElementById()</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/met_document_queryselector.asp" target="_blank">querySelector()</a></li>
+                    </ul>
                 </li>
                 <li>
                     <p>Exiba cada um dos elementos selecionados no console do navegador.</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/obj_console.asp" target="_blank">window.console</a></li>
+                    </ul>
                 </li>
             </ol>
             <p class="red"><em>Observe que, como um exemplo, este exercício já está resolvido.</em></p>
@@ -43,15 +60,25 @@
             <ol start="3">
                 <li>
                     <p>Selecione todos os elementos com a classe '<code>btn</code>' em uma coleção chamada '<code>btns</code>';</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp">getElementsByClassName()</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/met_document_queryselectorall.asp">querySelectorAll()</a></li>
+                    </ul>
                 </li>
                 <li>
                     <p>Exiba a coleção '<code>btns</code>' no console do navegador;</p>
                 </li>
                 <li>
                     <p>Itere cada elemento da coleção e exiba-os no console;</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank">for()</a></li>
+                    </ul>
                 </li>
                 <li>
                     <p>Exiba também, o valor do atributo '<code>href</code>' de cada elemento.</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/met_element_getattribute.asp" target="_blank">getAttribute()</a></li>
+                    </ul>
                 </li>
             </ol>
         </div>
@@ -61,6 +88,9 @@
             <ol start="7">
                 <li>
                     <p>Crie um monitor do evento '<code>click</code>' para cada elemento da coleção '<code>btns</code>';</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/event_onclick.asp" target="_blank">onclick</a></li>
+                    </ul>
                 </li>
                 <li>
                     <p>Quando o elemento receber um '<code class="nocmd">click</code>', dispara o método (função) '<code>toggleAccordion()</code>';</p>
@@ -70,6 +100,9 @@
                 </li>
                 <li>
                     <p>Em seguida, '<code>toggleAccordion()</code>' deve bloquear a ação do HTML para que o link clicado não funcione.</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/jsref_return.asp" target="_blank">return</a></li>
+                    </ul>
                 </li>
             </ol>
         </div>
@@ -81,7 +114,7 @@
                     <p>Crie uma classe na folha de estilos local, chamada '<code>show</code>' que torne um bloco visível;</p>
                 </li>
                 <li>
-                    <p>Crie uma classe na folha de estilos local, chamada '<code>-item</code>' que torne um bloco oculto;</p>
+                    <p>Crie uma classe na folha de estilos local, chamada '<code>item</code>' que torne um bloco oculto;</p>
                     <p class="red">&#x26a0; <em>Ao criar esta classe '<code>item</code>', as atividades dos exercícios devem ficar ocultas. Neste caso, acompanhe as atividades pelo código fonte.</em></p>
                 </li>
                 <li>
@@ -95,12 +128,18 @@
             <ol start="14">
                 <li>
                     <p>Edite '<code>toggleAccordion()</code>' para detectar se o elemento cujo ID tem o mesmo valor do atributo '<code>href</code>' do elemento clicado, tem a classe '<code>show</code>'. Se tiver, remova somente esta classe;</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/prop_element_classlist.asp" target="_blank">classList</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <p>Na mesma sequência, se o elemento não tem a classe '<code>href</code>', ela deve ser adicionada à lista de classes do elemento.</p>
+                    <p>Na mesma sequência, se o elemento não tem a classe '<code>show</code>', ela deve ser adicionada à lista de classes do elemento.</p>
                 </li>
                 <li>
                     <p>Faça com que, quando o item estiver oculto, exiba no botão que o mostra, o caracter '<code>&#8690;</code>';</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp" target="_blank">innerHTML</a></li>
+                    </ul>
                 </li>
                 <li>
                     <p>Faça com que, quando o item estiver visível, exiba no botão que o mostra, o caracter '<code>&#8689;</code>';</p>
@@ -108,26 +147,8 @@
             </ol>
         </div>
 
-        <h3>Exercício 6 <a href="ex06" class="btn">&#8690;</a></h3>
+        <h3>Desafio 1 <a href="ex06" class="btn">&#8690;</a></h3>
         <div class="item" id="ex06">
-            <ol start="14">
-                <li>
-                    <p>Edite '<code>toggleAccordion()</code>' para detectar se o elemento cujo ID tem o mesmo valor do atributo '<code>href</code>' do elemento clicado, tem a classe '<code>show</code>'. Se tiver, remova somente esta classe;</p>
-                </li>
-                <li>
-                    <p>Na mesma sequência, se o elemento não tem a classe '<code>href</code>', ela deve ser adicionada à lista de classes do elemento.</p>
-                </li>
-                <li>
-                    <p>Faça com que, quando o item estiver oculto, exiba no botão que o mostra, o caracter '<code>&#8690;</code>';</p>
-                </li>
-                <li>
-                    <p>Faça com que, quando o item estiver visível, exiba no botão que o oculta, o caracter '<code>&#8689;</code>';</p>
-                </li>
-            </ol>
-        </div>
-
-        <h3>Desafio 1 <a href="ex07" class="btn">&#8690;</a></h3>
-        <div class="item" id="ex07">
             <ul>
                 <li>
                     <p>Modifique o código para que, ao abrir uma nova seção, todas as outras seções que, por ventura, estejam visíveis, se fechem;</p>
@@ -139,8 +160,8 @@
             <p class="red"><em>Dica: crie uma nova função '<code>CloseAll()</code>' que oculte todas as seções, chamando-a no começo da função '<code>toggleAccordion()</code>'.</em></p>
         </div>
 
-        <h3>Desafio 2 <a href="ex08" class="btn">&#8690;</a></h3>
-        <div class="item" id="ex08">
+        <h3>Desafio 2 <a href="ex07" class="btn">&#8690;</a></h3>
+        <div class="item" id="ex07">
             <ul>
                 <li>
                     <p>Melhore o código de forma que a seção que fica aberta, ainda possa ser fechada ao clicar no botão, ou seja, que permite fechar todas as seções.</p>
@@ -166,7 +187,6 @@
         var ex05 = document.getElementById('ex05');
         var ex06 = document.getElementById('ex06');
         var ex07 = document.getElementById('ex07');
-        var ex08 = document.getElementById('ex08');
 
         // 2. Exibe os elementos obtidos acima, no console.
         console.log(ex01);
@@ -176,7 +196,82 @@
         console.log(ex05);
         console.log(ex06);
         console.log(ex07);
-        console.log(ex08);
+
+        ////////////////////
+
+        // 3. Cria uma coleção com os elementos com class="btn".
+        var btns = document.querySelectorAll('.btn');
+
+        // 4. Exibe a coleção 'btns' no console.
+        console.log(btns);
+
+        // 5. Itera elementos da coleção 'btns'.
+        for (let i = 0; i < btns.length; i++) {
+
+            // 5. Exibe cada item da coleção no console.
+            console.log(btns[i]);
+
+            // 6. Exibe o valor do atributo 'href' de cada item.
+            console.log(btns[i].getAttribute('href'));
+
+            // 7. Se ocorre 'click', dispara 'toggleAccordion()'.
+            btns[i].onclick = toggleAccordion;
+        }
+
+        // 9. Cria função toggleAccordion()
+        function toggleAccordion() {
+
+            // Obtém o valor de 'href' do elemento clicado 'this'
+            let href = this.getAttribute('href')
+            console.log(href);
+
+            // Desafio 1. Fecha todas as seções
+            closeAll(href);
+
+            // 13. Exibe o valor de 'class' da div cujo id = 'href' do elemento clicado
+            let myDiv = document.getElementById(href);
+            console.log(myDiv.getAttribute('class'));
+
+            // 14. Testa se 'myDiv' tem a classe 'show', remove-a
+            if (myDiv.classList.contains('show')) {
+                myDiv.classList.remove('show');
+
+                // 16. Troca o ícone do botão
+                this.innerHTML = '&#8690;';
+
+                // 15. Se não tem a classe 'show', adiciona
+            } else {
+                myDiv.classList.add('show');
+
+                // 17. Troca o ícone do botão
+                this.innerHTML = '&#8689;';
+            }
+            // 10. Bloqueia a ação do HTML
+            return false;
+        }
+
+        // Desafio 1. Fecha todas as seções abertas
+        function closeAll(href) {
+
+            // obtém toda sas seções
+            var items = document.getElementsByClassName('item');
+
+            // iterar as seções
+            for (let i = 0; i < items.length; i++) {
+
+                console.log(document.querySelector(`[href=${href}]`));
+
+                // Desafio 2. Não modifica a seção atual.
+                if (items[i].getAttribute('id') !== href) {
+
+                    // Oculta todas as seções (exceto a clicada, identificada por 'href')
+                    items[i].classList.remove('show');
+
+                    // Troca o ícone do botão relacionado com essa seção
+                    document.querySelector(`[href=${items[i].getAttribute('id')}]`).innerHTML = '&#8690;';
+                }
+            }
+        }
 
     </script>
 
